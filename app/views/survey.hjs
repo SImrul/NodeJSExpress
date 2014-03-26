@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ title }}</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>{{ title }}</h1>
+    <form name="sec1" id="sec1" action="/survey/post" method="post">
+    <p>Please take a few minutes to fill up the following survey:</p>
+    <ol>
+    	<li>What is your name:&nbsp;<input type="textbox" name="ansName" value=""/></li>
+    	<li>What is your age:&nbsp;<input type="textbox" name="ansAge" value=""/></li>
+    	<li>Do you need assistance to fill up the survey?&nbsp;
+    		<input type="radio" name="ansAsst" value="Yes">Yes</input>
+    		<input type="radio" name="ansAsst" value="No">No</input>
+    	</li>
+    </ol>
+    <input type="submit" value="Submit"/>
+    </form>
+  </body>
+</html>

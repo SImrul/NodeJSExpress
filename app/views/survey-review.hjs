@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ title }}</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>{{ title }}</h1>
+	<div>
+	<p>Thank you for submitting the survey. Please check your answers:</p>
+	<ol>
+		<li>What is your name: {{ansName}}</li>
+		<li>What is your age: {{ansAge}}</li>
+		<li>Do you need assistance to fill up the survey: {{ansAsst}}</li>
+	</ol>
+	</div>
+  </body>
+</html>

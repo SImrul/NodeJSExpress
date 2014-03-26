@@ -1,0 +1,12 @@
+Git clone command
+> git clone ssh://git@github.com/SImrul/NodeJSExpress.git
+
+Note:
+1. Don't use <username>@github.com. Always use git@github for SSH connction.
+2. Check if your SSH key is valid
+	ssh-add -l
+	returns locak public key, match it with Github account>Settings>SSH Keys.
+3. Reference:
+https://help.github.com/articles/error-permission-denied-publickey
+http://git-scm.com/book/en/Git-on-the-Server-The-Protocols
+http://git-scm.com/book/en/Git-on-the-Server-Generating-Your-SSH-Public-Key
