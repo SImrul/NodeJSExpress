@@ -30,13 +30,16 @@ app.use(express.static(path.join(__dirname, 'public')));
 if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
+//Database connection
+var db = require('./models/DB');
+
 //Routing requests
 app.get('/', routes.index);
 app.get('/users', user.list);
 
 var survey = require('./routes/survey');
-app.get('/survey',survey.show);
-app.post('/survey/post', survey.post);
+app.get('/survey', survey.show);
+app.post('/survey/post', db.save, survey.post);
 
 http.createServer(app).listen(config.port, function(){
   console.log('Express server listening on port ' + config.port);
